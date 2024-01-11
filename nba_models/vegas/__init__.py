@@ -1,0 +1,1 @@
+from .vegas import Vegas

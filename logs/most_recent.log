@@ -1,0 +1,82 @@
+CURRENT TIME 2024-01-11 14:00:08
+ON VM
+Fetching matchups for 2024-01-11..
+Done fetching matchups!
+
+Checking picks from yesterday for /home/nicoloruffini/twitterBot/nba_models/nba_pick_data_2023.db..
+76ers +1.5 - L
+Thunder -4.5 - W
+Jazz +6.5 - W
+Yesterday's record: 2-1-0
+Checking picks from yesterday for /home/nicoloruffini/twitterBot/nba_models/nba_pick_recent_data_2023.db..
+Spurs -2.5 - W
+Pacers -8 - Push
+Kings -8 - W
+Heat +4.5 - L
+Bulls -4 - W
+Pelicans -1 - W
+Clippers -10 - L
+Yesterday's record: 4-2-1
+Fetching trends for all games...
+
+---- PICKS FOR ALL GAMES ----
+NO PICK FOR ('Cavaliers', 'Nets')
+
+Matchup: ('Bucks', 'Celtics') {'spread': 'Bucks -4.5', 'total': '242.5', 'home_team': 'Bucks'}
+Bucks percent: 0.35
+Celtics percent: 1.0
+Pick: Celtics +4.5
+
+Matchup: ('Thunder', 'Trail Blazers') {'spread': 'Thunder -13', 'total': '235.5', 'home_team': 'Thunder'}
+Thunder percent: 0.7857142857142857
+Trail Blazers percent: 0.5
+Pick: Thunder -13
+
+Matchup: ('Knicks', 'Mavericks') {'spread': 'Knicks -4', 'total': '233.5', 'home_team': 'Mavericks'}
+Knicks percent: 0.75
+Mavericks percent: 0.4
+Pick: Knicks -4
+
+NO PICK FOR ('Lakers', 'Suns')
+
+Fetching trends for recent games...
+
+---- PICKS FOR LAST 7 GAMES ----
+Matchup: ('Cavaliers', 'Nets') {'spread': 'Cavaliers -3', 'total': '225', 'home_team': 'Cavaliers'}
+Cavaliers percent: 0.5 GP: 4
+Nets percent: 0.0 GP: 4
+Pick: Cavaliers -3
+
+Matchup: ('Bucks', 'Celtics') {'spread': 'Bucks -4.5', 'total': '242.5', 'home_team': 'Bucks'}
+Bucks percent: 0.0 GP: 2
+Celtics percent: 0.5 GP: 4
+Pick: Celtics +4.5
+
+Matchup: ('Thunder', 'Trail Blazers') {'spread': 'Thunder -13', 'total': '235.5', 'home_team': 'Thunder'}
+Thunder percent: 1.0 GP: 2
+Trail Blazers percent: 0.2 GP: 5
+Pick: Thunder -13
+
+Matchup: ('Knicks', 'Mavericks') {'spread': 'Knicks -4', 'total': '233.5', 'home_team': 'Mavericks'}
+Mavericks percent: 0.75 GP: 4
+Knicks percent: 0.5 GP: 4
+Pick: Mavericks +4
+
+NO PICK FOR ('Lakers', 'Suns')
+
+196
+Season-long trends:
+Yesterday: 2-1-0
+Overall: 49-54-1
+Celtics +4.5
+Thunder -13
+Knicks -4
+
+Last 7 games trends:
+Yesterday: 4-2-1
+Overall: 24-27-2
+Cavaliers -3
+Celtics +4.5
+Thunder -13
+Mavericks +4
+
