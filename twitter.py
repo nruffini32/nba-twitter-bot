@@ -100,5 +100,6 @@ Overall: {recent_games_results["overall"]}\n"""
         text = self.run_model()
         
         cur_dir = os.path.dirname(os.path.realpath(__file__))
-        media = self.api.simple_upload(f"{cur_dir}/mcnulty wife.webp")
-        self.client.create_tweet(text=text, media_ids=[media.media_id])
+        # media = self.api.simple_upload(f"{cur_dir}/mcnulty wife.webp")
+        # self.client.create_tweet(text=text, media_ids=[media.media_id])
+	self.client.create_tweet(text=text)

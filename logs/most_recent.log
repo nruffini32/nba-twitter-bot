@@ -1,110 +1,74 @@
-CURRENT TIME 2024-01-13 14:00:08
+CURRENT TIME 2024-01-14 14:00:09
 ON VM
-Fetching matchups for 2024-01-13..
+Fetching matchups for 2024-01-14..
 Done fetching matchups!
 
 Checking picks from yesterday for /home/nicoloruffini/twitterBot/nba_models/nba_pick_data_2023.db..
-76ers +1 - W
-Pacers +5.5 - W
-Rockets -7 - L
-Clippers -8 - W
-Warriors +3 - W
-Spurs -2.5 - W
-Jazz -3 - W
-Yesterday's record: 6-1-0
+Wizards +7 - W
+Knicks -8 - W
+Thunder -11 - W
+Warriors +11.5 - W
+Jazz +1.5 - W
+Yesterday's record: 5-0-0
 Checking picks from yesterday for /home/nicoloruffini/twitterBot/nba_models/nba_pick_recent_data_2023.db..
-Kings -1 - L
-Pistons +7 - W
-Magic +3.5 - W
-Clippers -8 - W
-Bulls -3 - L
-Jazz -3 - W
-Pelicans +8 - L
-Yesterday's record: 4-3-0
+Celtics -15.5 - W
+Knicks -8 - W
+Thunder -11 - W
+Spurs +5.5 - L
+Jazz +1.5 - W
+Yesterday's record: 4-1-0
 Fetching trends for all games...
 
 ---- PICKS FOR ALL GAMES ----
-NO PICK FOR ('Celtics', 'Rockets')
+NO PICK FOR ('Nuggets', 'Pacers')
 
-Matchup: ('Hawks', 'Wizards') {'spread': 'Hawks -7', 'total': '251', 'home_team': 'Hawks'}
-Hawks percent: 0.18181818181818182
-Wizards percent: 0.5714285714285714
-Pick: Wizards +7
+NO PICK FOR ('Heat', 'Hornets')
 
-Matchup: ('Grizzlies', 'Knicks') {'spread': 'Knicks -8', 'total': '222.5', 'home_team': 'Grizzlies'}
-Knicks percent: 0.6666666666666666
-Grizzlies percent: 0.2222222222222222
-Pick: Knicks -8
+Matchup: ('Clippers', 'Timberwolves') {'spread': 'Clippers -2', 'total': '223', 'home_team': 'Timberwolves'}
+Clippers percent: 0.6666666666666666
+Timberwolves percent: 1.0
+Pick: Timberwolves +2
 
-Matchup: ('Magic', 'Thunder') {'spread': 'Thunder -11', 'total': '231.5', 'home_team': 'Thunder'}
-Thunder percent: 0.8
-Magic percent: 0.5294117647058824
-Pick: Thunder -11
+Matchup: ('Bucks', 'Kings') {'spread': 'Bucks -5', 'total': '247.5', 'home_team': 'Bucks'}
+Bucks percent: 0.36363636363636365
+Kings percent: 0.7142857142857143
+Pick: Kings +5
 
-Matchup: ('Bucks', 'Warriors') {'spread': 'Bucks -11.5', 'total': '245', 'home_team': 'Bucks'}
-Bucks percent: 0.38095238095238093
-Warriors percent: 0.7272727272727273
-Pick: Warriors +11.5
-
-NO PICK FOR ('Bulls', 'Spurs')
-
-NO PICK FOR ('Mavericks', 'Pelicans')
-
-Matchup: ('Jazz', 'Lakers') {'spread': 'Lakers -1.5', 'total': '238.5', 'home_team': 'Jazz'}
-Lakers percent: 0.25
-Jazz percent: 0.7692307692307693
-Pick: Jazz +1.5
+NO PICK FOR ('Suns', 'Trail Blazers')
 
 Fetching trends for recent games...
 
 ---- PICKS FOR LAST 7 GAMES ----
-Matchup: ('Celtics', 'Rockets') {'spread': 'Celtics -15.5', 'total': '228', 'home_team': 'Celtics'}
-Celtics percent: 0.5 GP: 2
-Rockets percent: 0.0 GP: 3
-Pick: Celtics -15.5
+Matchup: ('Nuggets', 'Pacers') {'spread': 'Nuggets -10.5', 'total': '240.5', 'home_team': 'Nuggets'}
+Nuggets percent: 0.6 GP: 5
+Pacers percent: 1.0 GP: 2
+Pick: Pacers +10.5
 
-NO PICK FOR ('Hawks', 'Wizards')
+NO PICK FOR ('Heat', 'Hornets')
 
-Matchup: ('Grizzlies', 'Knicks') {'spread': 'Knicks -8', 'total': '222.5', 'home_team': 'Grizzlies'}
-Grizzlies percent: 0.0 GP: 4
-Knicks percent: 0.5 GP: 4
-Pick: Knicks -8
+Matchup: ('Clippers', 'Timberwolves') {'spread': 'Clippers -2', 'total': '223', 'home_team': 'Timberwolves'}
+Timberwolves percent: 0.5 GP: 2
+Clippers percent: 0.75 GP: 4
+Pick: Clippers -2
 
-Matchup: ('Magic', 'Thunder') {'spread': 'Thunder -11', 'total': '231.5', 'home_team': 'Thunder'}
-Thunder percent: 1.0 GP: 3
-Magic percent: 0.6 GP: 5
-Pick: Thunder -11
+Matchup: ('Bucks', 'Kings') {'spread': 'Bucks -5', 'total': '247.5', 'home_team': 'Bucks'}
+Bucks percent: 0.25 GP: 4
+Kings percent: 0.6666666666666666 GP: 3
+Pick: Kings +5
 
-NO PICK FOR ('Bucks', 'Warriors')
+NO PICK FOR ('Suns', 'Trail Blazers')
 
-Matchup: ('Bulls', 'Spurs') {'spread': 'Bulls -5.5', 'total': '226.5', 'home_team': 'Spurs'}
-Spurs percent: 0.6666666666666666 GP: 3
-Bulls percent: 0.0 GP: 3
-Pick: Spurs +5.5
-
-NO PICK FOR ('Mavericks', 'Pelicans')
-
-Matchup: ('Jazz', 'Lakers') {'spread': 'Lakers -1.5', 'total': '238.5', 'home_team': 'Jazz'}
-Jazz percent: 0.75 GP: 4
-Lakers percent: 0.5 GP: 2
-Pick: Jazz +1.5
-
-225
+169
 Season-long trends:
-Yesterday: 6-1-0
-Overall: 56-57-1
-Wizards +7
-Knicks -8
-Thunder -11
-Warriors +11.5
-Jazz +1.5
+Yesterday: 5-0-0
+Overall: 61-57-1
+Timberwolves +2
+Kings +5
 
 Last 7 games trends:
-Yesterday: 4-3-0
-Overall: 31-31-2
-Celtics -15.5
-Knicks -8
-Thunder -11
-Spurs +5.5
-Jazz +1.5
+Yesterday: 4-1-0
+Overall: 35-32-2
+Pacers +10.5
+Clippers -2
+Kings +5
 
