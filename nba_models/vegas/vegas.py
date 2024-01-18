@@ -44,6 +44,7 @@ class Vegas:
                 """
                 cur.execute(query, ("N/A", yesterday, team1, team2))
                 conn.commit()
+                push_cnt += 1
                 continue
 
 
