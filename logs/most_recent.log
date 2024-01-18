@@ -1,74 +1,27 @@
-CURRENT TIME 2024-01-14 14:00:09
+CURRENT TIME 2024-01-18 14:00:08
 ON VM
-Fetching matchups for 2024-01-14..
+Fetching matchups for 2024-01-18..
 Done fetching matchups!
 
 Checking picks from yesterday for /home/nicoloruffini/twitterBot/nba_models/nba_pick_data_2023.db..
-Wizards +7 - W
-Knicks -8 - W
-Thunder -11 - W
-Warriors +11.5 - W
-Jazz +1.5 - W
-Yesterday's record: 5-0-0
+Bucks -3.5 - L
+Magic +4 - W
+Trail Blazers +6 - W
+Yesterday's record: 2-1-0
 Checking picks from yesterday for /home/nicoloruffini/twitterBot/nba_models/nba_pick_recent_data_2023.db..
-Celtics -15.5 - W
-Knicks -8 - W
-Thunder -11 - W
-Spurs +5.5 - L
-Jazz +1.5 - W
-Yesterday's record: 4-1-0
-Fetching trends for all games...
-
----- PICKS FOR ALL GAMES ----
-NO PICK FOR ('Nuggets', 'Pacers')
-
-NO PICK FOR ('Heat', 'Hornets')
-
-Matchup: ('Clippers', 'Timberwolves') {'spread': 'Clippers -2', 'total': '223', 'home_team': 'Timberwolves'}
-Clippers percent: 0.6666666666666666
-Timberwolves percent: 1.0
-Pick: Timberwolves +2
-
-Matchup: ('Bucks', 'Kings') {'spread': 'Bucks -5', 'total': '247.5', 'home_team': 'Bucks'}
-Bucks percent: 0.36363636363636365
-Kings percent: 0.7142857142857143
-Pick: Kings +5
-
-NO PICK FOR ('Suns', 'Trail Blazers')
-
-Fetching trends for recent games...
-
----- PICKS FOR LAST 7 GAMES ----
-Matchup: ('Nuggets', 'Pacers') {'spread': 'Nuggets -10.5', 'total': '240.5', 'home_team': 'Nuggets'}
-Nuggets percent: 0.6 GP: 5
-Pacers percent: 1.0 GP: 2
-Pick: Pacers +10.5
-
-NO PICK FOR ('Heat', 'Hornets')
-
-Matchup: ('Clippers', 'Timberwolves') {'spread': 'Clippers -2', 'total': '223', 'home_team': 'Timberwolves'}
-Timberwolves percent: 0.5 GP: 2
-Clippers percent: 0.75 GP: 4
-Pick: Clippers -2
-
-Matchup: ('Bucks', 'Kings') {'spread': 'Bucks -5', 'total': '247.5', 'home_team': 'Bucks'}
-Bucks percent: 0.25 GP: 4
-Kings percent: 0.6666666666666666 GP: 3
-Pick: Kings +5
-
-NO PICK FOR ('Suns', 'Trail Blazers')
-
-169
-Season-long trends:
-Yesterday: 5-0-0
-Overall: 61-57-1
-Timberwolves +2
-Kings +5
-
-Last 7 games trends:
-Yesterday: 4-1-0
-Overall: 35-32-2
-Pacers +10.5
-Clippers -2
-Kings +5
-
+Timberwolves -11.5 - L
+Cavaliers +3.5 - W
+Knicks -5 - W
+Spurs +16 - L
+Traceback (most recent call last):
+  File "/home/nicoloruffini/twitterBot/main.py", line 9, in <module>
+    TwitterBot(dry_run=False, vm=True).post_tweet()
+  File "/home/nicoloruffini/twitterBot/twitter.py", line 100, in post_tweet
+    text = self.run_model()
+  File "/home/nicoloruffini/twitterBot/twitter.py", line 61, in run_model
+    recent_games_results = m.check_picks(recent_games=True)
+  File "/home/nicoloruffini/twitterBot/nba_models/get_picks.py", line 290, in check_picks
+    yesterdays_record = v.check_picks(scores, db)
+  File "/home/nicoloruffini/twitterBot/nba_models/vegas/vegas.py", line 33, in check_picks
+    game_result = scores[key]
+KeyError: ('Jazz', 'Warriors')
