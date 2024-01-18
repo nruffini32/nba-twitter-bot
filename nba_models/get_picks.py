@@ -278,7 +278,7 @@ class Model:
     def check_picks(self, recent_games=False):
         # Checking yesterdays picks
         scores = self.nba.get_yesterday_scores()
-        v = Vegas()
+        v = Vegas(dry_run=self.dry_run)
 
         if recent_games:
             db = f'{self.cur_dir}/nba_pick_recent_data_2023.db'

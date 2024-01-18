@@ -45,7 +45,6 @@ class TwitterBot:
 
     def run_model(self):
 
-        ### CHANGE THIS ARGUMENT FOR DRY RUN
         if self.dry_run:
             if self.vm:
                 m = Model(dry_run=True, vm=True)

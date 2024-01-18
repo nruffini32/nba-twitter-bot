@@ -4,8 +4,9 @@ from datetime import date, timedelta
 import sqlite3
 
 class Vegas:
-    def __init__(self) -> None:
-        pass
+    def __init__(self, dry_run=False) -> None:
+        self.dry_run=dry_run
+        
 
     def check_picks(self, scores, db):
         print(f"Checking picks from yesterday for {db}..")
@@ -30,7 +31,22 @@ class Vegas:
             key = (team1, team2)
 
             # Get the actual scores from the 'scores' dictionary
-            game_result = scores[key]
+
+            # try and except for is if game got cancelled/didn't happen for some reason
+            try:
+                game_result = scores[key]
+            except:
+                print(f"{row['pick']} - GAME DIDN'T HAPPEN")
+                query = f"""
+                    UPDATE bets
+                    SET win_loss = ?
+                    WHERE date = ? AND matchup_team1 = ? AND matchup_team2 = ?
+                """
+                cur.execute(query, ("N/A", yesterday, team1, team2))
+                conn.commit()
+                continue
+
+
             actual_score1 = game_result[team1]
             actual_score2 = game_result[team2]
 
@@ -80,12 +96,13 @@ class Vegas:
         conn.commit()
 
         # Insert data using variables into the 'results' table
-        insert_data_query = '''
-        INSERT INTO results (date, win, loss, push)
-        VALUES (?, ?, ?, ?);
-        '''
-        cur.execute(insert_data_query, (yesterday, win_cnt, lose_cnt, push_cnt))
-        conn.commit()
+        if not self.dry_run:
+            insert_data_query = '''
+            INSERT INTO results (date, win, loss, push)
+            VALUES (?, ?, ?, ?);
+            '''
+            cur.execute(insert_data_query, (yesterday, win_cnt, lose_cnt, push_cnt))
+            conn.commit()
 
         cur.close()
         conn.close()
