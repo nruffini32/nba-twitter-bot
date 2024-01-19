@@ -1,27 +1,15 @@
-CURRENT TIME 2024-01-18 14:00:08
+CURRENT TIME 2024-01-19 14:00:09
 ON VM
-Fetching matchups for 2024-01-18..
-Done fetching matchups!
-
-Checking picks from yesterday for /home/nicoloruffini/twitterBot/nba_models/nba_pick_data_2023.db..
-Bucks -3.5 - L
-Magic +4 - W
-Trail Blazers +6 - W
-Yesterday's record: 2-1-0
-Checking picks from yesterday for /home/nicoloruffini/twitterBot/nba_models/nba_pick_recent_data_2023.db..
-Timberwolves -11.5 - L
-Cavaliers +3.5 - W
-Knicks -5 - W
-Spurs +16 - L
+Fetching matchups for 2024-01-19..
 Traceback (most recent call last):
   File "/home/nicoloruffini/twitterBot/main.py", line 9, in <module>
     TwitterBot(dry_run=False, vm=True).post_tweet()
-  File "/home/nicoloruffini/twitterBot/twitter.py", line 100, in post_tweet
+  File "/home/nicoloruffini/twitterBot/twitter.py", line 99, in post_tweet
     text = self.run_model()
-  File "/home/nicoloruffini/twitterBot/twitter.py", line 61, in run_model
-    recent_games_results = m.check_picks(recent_games=True)
-  File "/home/nicoloruffini/twitterBot/nba_models/get_picks.py", line 290, in check_picks
-    yesterdays_record = v.check_picks(scores, db)
-  File "/home/nicoloruffini/twitterBot/nba_models/vegas/vegas.py", line 33, in check_picks
-    game_result = scores[key]
-KeyError: ('Jazz', 'Warriors')
+  File "/home/nicoloruffini/twitterBot/twitter.py", line 55, in run_model
+    m = Model(vm=True)
+  File "/home/nicoloruffini/twitterBot/nba_models/get_picks.py", line 19, in __init__
+    self.matchups = self.nba.get_matchups()
+  File "/home/nicoloruffini/twitterBot/nba_models/nba_scraper/scraper.py", line 292, in get_matchups
+    lines_dic["spread"] = spread.replace(temp, tags[temp])
+KeyError: 'N/A'
