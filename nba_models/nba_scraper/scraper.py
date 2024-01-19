@@ -289,10 +289,19 @@ class NBAScraper:
             spread = lines_soup.find('td', {'data-filter': 'spread'}).text.strip()
             total = lines_soup.find('td', {'data-filter': 'total'}).text.strip()[1:]
             temp = spread.split()[0]
-            lines_dic["spread"] = spread.replace(temp, tags[temp])
+
+            ## Handling if N/A appears for line at vegas site (no line for game)
+            try:
+                lines_dic["spread"] = spread.replace(temp, tags[temp])
+            except Exception as e:
+                print(f"ERROR - NO SPREAD FOR {tup}")
+                print(e)
+                continue
+
             lines_dic["total"] = total
             lines_dic["home_team"] = home_team
             # dic["lines"] = lines_dic
+
 
             dic[tup] = lines_dic
 
@@ -383,3 +392,4 @@ class NBAScraper:
             dic[date] = temp_dic
 
         return dic
+    

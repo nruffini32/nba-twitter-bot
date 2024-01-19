@@ -98,12 +98,18 @@ class Vegas:
 
         # Insert data using variables into the 'results' table
         if not self.dry_run:
-            insert_data_query = '''
-            INSERT INTO results (date, win, loss, push)
-            VALUES (?, ?, ?, ?);
-            '''
-            cur.execute(insert_data_query, (yesterday, win_cnt, lose_cnt, push_cnt))
-            conn.commit()
+
+            cur.execute("select max(date) from results")
+            max_date = cur.fetchone()[0]
+
+            # Only inserting if results doesn't exists in table
+            if str(yesterday) != str(max_date):
+                insert_data_query = '''
+                INSERT INTO results (date, win, loss, push)
+                VALUES (?, ?, ?, ?);
+                '''
+                cur.execute(insert_data_query, (yesterday, win_cnt, lose_cnt, push_cnt))
+                conn.commit()
 
         cur.close()
         conn.close()
