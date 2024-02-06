@@ -1,15 +1,97 @@
-CURRENT TIME 2024-01-19 14:00:09
+CURRENT TIME 2024-02-05 14:00:10
 ON VM
-Fetching matchups for 2024-01-19..
+Fetching matchups for 2024-02-05..
+Done fetching matchups!
+
+Checking picks from yesterday for /home/nicoloruffini/twitterBot/nba_models/nba_pick_data_2023.db..
+Magic -6.5 - W
+Suns -11.5 - W
+Clippers -4 - W
+Thunder -8.5 - L
+Jazz -1 - W
+Yesterday's record: 4-1-0
+Checking picks from yesterday for /home/nicoloruffini/twitterBot/nba_models/nba_pick_recent_data_2023.db..
+Suns -11.5 - W
+Clippers -4 - W
+Grizzlies +18 - L
+Pacers -9.5 - W
+Rockets +7.5 - L
+Raptors +8.5 - W
+Trail Blazers +13.5 - W
+Yesterday's record: 5-2-0
+Fetching trends for all games...
+
+---- PICKS FOR ALL GAMES ----
+Matchup: ('Cavaliers', 'Kings') {'spread': 'Cavaliers -4.5', 'total': '235', 'home_team': 'Cavaliers'}
+Cavaliers percent: 0.5789473684210527
+Kings percent: 0.7272727272727273
+Pick: Kings +4.5
+
+NO PICK FOR ('76ers', 'Mavericks')
+
+Matchup: ('Hornets', 'Lakers') {'spread': 'Lakers -11.5', 'total': '228', 'home_team': 'Hornets'}
+Lakers percent: 0.2222222222222222
+Hornets percent: 0.35
+Pick: Hornets +11.5
+
+Matchup: ('Nets', 'Warriors') {'spread': 'Nets -1.5', 'total': '237.5', 'home_team': 'Nets'}
+Nets percent: 0.7272727272727273
+Warriors percent: 0.6923076923076923
+Pick: Nets -1.5
+
+Matchup: ('Clippers', 'Hawks') {'spread': 'Clippers -3', 'total': '242', 'home_team': 'Hawks'}
+Clippers percent: 0.6470588235294118
+Hawks percent: 0.2857142857142857
+Pick: Clippers -3
+
+NO PICK FOR ('Pelicans', 'Raptors')
+
+Fetching trends for recent games...
+
+---- PICKS FOR LAST 7 GAMES ----
+NO PICK FOR ('Cavaliers', 'Kings')
+
+Matchup: ('76ers', 'Mavericks') {'spread': 'Mavericks -1.5', 'total': '242.5', 'home_team': '76ers'}
+76ers percent: 0.0 GP: 2
+Mavericks percent: 0.5 GP: 2
+Pick: Mavericks -1.5
+
+Matchup: ('Hornets', 'Lakers') {'spread': 'Lakers -11.5', 'total': '228', 'home_team': 'Hornets'}
+Hornets percent: 0.0 GP: 5
+Lakers percent: 0.5 GP: 6
+Pick: Lakers -11.5
+
+NO PICK FOR ('Nets', 'Warriors')
+
+NO PICK FOR ('Clippers', 'Hawks')
+
+NO PICK FOR ('Pelicans', 'Raptors')
+
+185
+Season-long trends:
+Yesterday: 4-1-0
+Overall: 80-73-2
+Kings +4.5
+Hornets +11.5
+Nets -1.5
+Clippers -3
+
+Last 7 games trends:
+Yesterday: 5-2-0
+Overall: 67-72-4
+Mavericks -1.5
+Lakers -11.5
+
 Traceback (most recent call last):
   File "/home/nicoloruffini/twitterBot/main.py", line 9, in <module>
     TwitterBot(dry_run=False, vm=True).post_tweet()
-  File "/home/nicoloruffini/twitterBot/twitter.py", line 99, in post_tweet
-    text = self.run_model()
-  File "/home/nicoloruffini/twitterBot/twitter.py", line 55, in run_model
-    m = Model(vm=True)
-  File "/home/nicoloruffini/twitterBot/nba_models/get_picks.py", line 19, in __init__
-    self.matchups = self.nba.get_matchups()
-  File "/home/nicoloruffini/twitterBot/nba_models/nba_scraper/scraper.py", line 292, in get_matchups
-    lines_dic["spread"] = spread.replace(temp, tags[temp])
-KeyError: 'N/A'
+  File "/home/nicoloruffini/twitterBot/twitter.py", line 103, in post_tweet
+    self.client.create_tweet(text=text)
+  File "/home/nicoloruffini/.local/lib/python3.9/site-packages/tweepy/client.py", line 835, in create_tweet
+    return self._make_request(
+  File "/home/nicoloruffini/.local/lib/python3.9/site-packages/tweepy/client.py", line 129, in _make_request
+    response = self.request(method, route, params=request_params,
+  File "/home/nicoloruffini/.local/lib/python3.9/site-packages/tweepy/client.py", line 98, in request
+    raise Unauthorized(response)
+tweepy.errors.Unauthorized: 401 Unauthorized
+Unauthorized
