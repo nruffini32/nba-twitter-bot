@@ -12,9 +12,9 @@ class TwitterBot:
         self.vm = vm
 
         # v1 client
-        auth = tweepy.OAuth1UserHandler(config.CONSUMER_KEY, config.CONSUMER_SECRET)
-        auth.set_access_token(config.ACCESS_TOKEN, config.ACCESS_TOKEN_SECRET)
-        self.api = tweepy.API(auth)
+        # auth = tweepy.OAuth1UserHandler(config.CONSUMER_KEY, config.CONSUMER_SECRET)
+        # auth.set_access_token(config.ACCESS_TOKEN, config.ACCESS_TOKEN_SECRET)
+        # self.api = tweepy.API(auth)
 
 
         # # v2 client
