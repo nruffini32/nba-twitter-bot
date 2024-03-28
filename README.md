@@ -9,7 +9,7 @@ Twitter account <a href="https://twitter.com/ShitterNBAPicks">here</a>
 ###### Disclaimer: This was made for educational purposes only and should not be considered financial or betting advice.
 
 ## High Level Overview
-Every day the script is doing the following:
+Every day the `main.py` script is being run and is doing the following:
 1. Checking yesterday's picks and storing results in database
 2. Making picks for tonight's games and storing in database
 3. Tweeting out picks, yesterday's record, and total record
