@@ -10,8 +10,8 @@ Twitter account <a href="https://twitter.com/ShitterNBAPicks">here</a>
 
 ## High Level Overview
 Every day the script is doing the following:
-1. Checking yesterday's picks and storing in database
-2. Making picks for tonight's games
+1. Checking yesterday's picks and storing results in database
+2. Making picks for tonight's games and storing in database
 3. Tweeting out picks, yesterday's record, and total record
 
 ### Pick Algorithm
