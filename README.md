@@ -39,7 +39,6 @@ There are three main modules that are being utilized
 [nba_models.get_picks.Model](nba_models/get_picks.py.) - Model class that contains logic to make the picks.
 
 ## Acknowledgements
+Special thanks to <a href="https://www.basketball-reference.com/">www.basketball-reference.com</a> for designing a scrape-friendly site.
 
-Special thanks to basketball-reference.com for designing a scrape friendly site
-
-Also to [Tweepy](https://github.com/tweepy/tweepy) - For Twitter API integration.
+Also to [Tweepy](https://github.com/tweepy/tweepy) for developing a simple to use python sdk to interact with the Twitter API.
