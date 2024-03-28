@@ -24,9 +24,9 @@ For each matchup the script is doing the following
 4. If the two teams have contradicting decisions (it wants to tail both teams / fade both teams) then no pick will be given for that matchup
 
 ## Technologies
-- Data is being stored in a sqlite database in the VM
+- Data is being stored in a sqlite database
 - Script is being scheduled with a cronjob on a Google Cloud VM
-- Log files are stored in the filesystem of the VM
+- Log files are stored in local filesystem
 - Data is being scraper from <a href="https://www.basketball-reference.com/">www.basketball-reference.com</a>
 
 ## Modules
