@@ -21,7 +21,7 @@ For each matchup the script is doing the following
 1. Group the two teams into one of the following categories: home dog / home favorite / away dog / away favorite
 2. Check the percentage of times each team has covered in their given category on that night
 3. If a team have covered more than 75% of the time or did not cover less than 25% of the time, the algorithm with tail or fade that team, respectively
-4. If the two teams have contradicting decisions (We want to tail both teams / fade both teams) then no pick will be given for that matchup
+4. If the two teams have contradicting decisions (it wants to tail both teams / fade both teams) then no pick will be given for that matchup
 
 ## Technologies
 - Data is being stored in a sqlite database in the VM
