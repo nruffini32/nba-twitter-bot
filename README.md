@@ -30,7 +30,7 @@ For each matchup the script is doing the following
 - Data is being scraper from <a href="https://www.basketball-reference.com/">www.basketball-reference.com</a>
 
 ## Modules
-There are two main modules that are being utilized
+There are three main modules that are being utilized
 
 [nba_models.nba_scraper.scraper.NBAScraper](nba_models/nba_scraper/scraper.py) - This is an interface that is being used to scrape data from basketball-reference.com
 
